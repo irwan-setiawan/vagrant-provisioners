@@ -17,3 +17,6 @@ if ! rpm -qa | grep -qw "php-mcrypt"; then
 else
 	echo "Checking php-mcrypt.. Already Installed"
 fi
+
+# Everything under app/storage in Laravel must be writable by the web server
+chmod -R 0777 /vagrant/app/storage
