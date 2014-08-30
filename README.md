@@ -17,11 +17,9 @@ Edit your `Vagrantfile` to include desired scripts to run
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "chef/centos-6.5"
-  config.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box"
 
-  #config.vm.network :forwarded_port, guest: 80, host: 8080
-  config.vm.network :private_network, ip: "10.0.0.6"
+  # Your vagrant configuration here
+  
 
   # Provisioning from https://github.com/irwan-setiawan/vagrant-provisioners/
   config.vm.provision :shell, :path => "https://raw.githubusercontent.com/irwan-setiawan/vagrant-provisioners/master/rhel-sh-timezone-singapore.sh"
