@@ -4,3 +4,7 @@
 echo "Setting Apache's DocumentRoot for Laravel"
 sed -i 's/^DocumentRoot .*/DocumentRoot "\/vagrant\/public"/g' /etc/httpd/conf/httpd.conf
 sed -i 's/\/var\/www\/html/\/vagrant\/public/g' /etc/httpd/conf/httpd.conf
+
+# Restart Apache service
+echo "Restarting Apache Service"
+service httpd restart
