@@ -1,4 +1,4 @@
-Vagrant Profisioners
+Vagrant Provisioners
 ===================
 
 Collection of scripts used to provision vagrant boxes
