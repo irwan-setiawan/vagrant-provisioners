@@ -19,4 +19,6 @@ else
 fi
 
 # Everything under app/storage in Laravel must be writable by the web server
-chmod -R 0777 /vagrant/app/storage
+#chmod -R 0777 /vagrant/app/storage
+sed -i 's/^User .*/User vagrant/g' /etc/httpd/conf/httpd.conf
+sed -i 's/^Group .*/Group vagrant/g' /etc/httpd/conf/httpd.conf
