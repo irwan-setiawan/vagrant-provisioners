@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "!!! This provisioner file is deprecated, please use individual repo installation !!!"
+
 # EPEL Repository
 echo "Adding EPEL Repository"
 rpm -ivh --force http://download.fedoraproject.org/pub/epel/6/$(arch)/epel-release-6-8.noarch.rpm
