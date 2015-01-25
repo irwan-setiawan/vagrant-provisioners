@@ -28,8 +28,8 @@ sed -i 's/^EnableSendfile on/EnableSendfile off/g' /etc/httpd/conf/httpd.conf
 
 # Register Apache as a service
 echo "Registering Apache as a service"
-chkconfig httpd on
+systemctl enable httpd.service
 
 # Start Apache service
 echo "Starting Apache Service"
-service httpd restart
+systemctl restart httpd.service

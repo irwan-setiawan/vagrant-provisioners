@@ -4,6 +4,7 @@ Vagrant Provisioners
 Collection of scripts used to provision vagrant boxes
 
 * rhel -- used for RHEL-based Linux, e.g. RHEL, CentOS
+* centos7 -- used for CentOS 7
 
 How to use
 ==========
