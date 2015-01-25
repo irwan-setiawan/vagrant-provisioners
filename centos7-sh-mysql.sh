@@ -24,8 +24,8 @@ fi
 
 # Register MySQL as a service
 echo "Registering MySQL as a service"
-chkconfig mysqld on
+systemctl enable mysqld
 
 # Start MySQL service
 echo "Starting MySQL Service"
-service mysqld restart
+systemctl restart mysqld
